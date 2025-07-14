@@ -10,15 +10,37 @@
       background-color: #111;
       color: #fff;
       text-align: center;
-      padding: 50px;
+      padding: 30px;
     }
     h1 {
       color: #facc15;
+      font-size: 2.5rem;
     }
     a {
       color: #38bdf8;
       text-decoration: none;
       font-weight: bold;
+    }
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 20px;
+    }
+    .video {
+      background-color: #222;
+      padding: 10px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .video img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .video-title {
+      margin-top: 10px;
+      font-size: 1rem;
     }
   </style>
 </head>
@@ -26,5 +48,25 @@
   <h1>Welcome to TheFourSparks</h1>
   <p>Your dose of 🔥 content!</p>
   <p>Subscribe on <a href="https://www.youtube.com/@TheFourSparks" target="_blank">YouTube</a></p>
+
+  <div class="video-gallery">
+    <!-- Video 1 -->
+    <div class="video">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg" alt="Video 1">
+        <div class="video-title">My First Video</div>
+      </a>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video">
+      <a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" alt="Video 2">
+        <div class="video-title">Second Spark 🔥</div>
+      </a>
+    </div>
+
+    <!-- Add more videos below by copying the block above -->
+  </div>
 </body>
 </html>
